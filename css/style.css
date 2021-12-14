@@ -16,12 +16,12 @@ header {
 
 h1 {
     color: #901C1C;
-    margin-right: 100px;
+    margin-right: 4%;
 }
 
 .logo {
     height: 50px;
-    margin-left: 100px;
+    margin-left: 4%;
 }
 
 .photographer_section {
@@ -47,4 +47,5 @@ h1 {
 .photographer_section article img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
