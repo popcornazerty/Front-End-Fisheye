@@ -48,4 +48,27 @@ h1 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+paragraph {
+    color:violet;
+    display: flex;
+}
+
+paragraph2 {
+    color:violet;
+    display: flex;
+}
+
+paragraph3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+paragraph4 {
+    color:grey;
 }
