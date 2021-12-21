@@ -1,5 +1,14 @@
 @import url("photographer.css");
 
+@media screen and (max-width: 375px) {
+    .photographer_section {
+        display: none !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 70px;
+        margin-top: 100px;
+    }
+  }
+
 body {
     font-family: "DM Sans", sans-serif;
     margin: 0;
@@ -51,24 +60,8 @@ h1 {
     object-fit: cover;
 }
 
-paragraph {
+.city {
     color:violet;
     display: flex;
 }
 
-paragraph2 {
-    color:violet;
-    display: flex;
-}
-
-paragraph3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-paragraph4 {
-    color:grey;
-}
