@@ -19,8 +19,8 @@ function photographerFactory(data) {
         priceDom.setAttribute("class", "price");
         const h2 = document.createElement( 'h2' );
         h2.textContent = name;
-        cityDom.textContent = city;
-        countryDom.textContent = country;
+        cityDom.textContent = `${city}, ${country}` ;
+        //countryDom.textContent = country;
         taglineDom.textContent = tagline;
         priceDom.textContent = `${price} €/jour`;
         article.appendChild(img);
@@ -33,3 +33,10 @@ function photographerFactory(data) {
     }
     return { name, picture, city, country, tagline, price,  getUserCardDOM }
 }
+
+//<a href="#" onclick="window.open('chemin_image');">photographer.html</a>
+//<a href="la_page.html" target="Nom_Fenetre">Libellé du lien</a>
+
+//document.getElementById("243").innerHTML = 
+//"The full URL of this page is:<br>" + photographer.html;
+
