@@ -41,8 +41,7 @@ function photographerFactory(data) {
 
 
 
-const urlParameter = new URLSearchParams(window.location.search).get('id');
-console.log(urlParameter);
+
 
 
 
