@@ -64,6 +64,44 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     });
 
-    console.log(photographerInfo)
+    //console.log(photographerInfo);
+
+    const divPhotographerPage = document.getElementById("photographer_page");
+    //console.log(divPhotographerPage);
+    //console.log(photographerInfo.length);
+
+    photographerInfo.forEach(
+        photographer => {
+            console.log(photographer.city);
+            console.log(photographer.id);
+
+            const spanCity = document.createElement("span");
+            spanCity.innerHTML = photographer.city;
+            divPhotographerPage.appendChild(spanCity);
+
+            const spanCountry = document.createElement("span");
+            spanCountry.innerHTML = photographer.country;
+            divPhotographerPage.appendChild(spanCountry);
+        }
+
+    );
+
+
+
+    //console.log(divPhotographerPage);
+
+    
+
+
+    /*let photographerId = ["195", "925", "527", "82", "930" , "243"];
+    photographerId.forEach(id) => {
+        console.log(id);
+        if (id === "photographerInfo") {
+            console.log(id)
+        }
+    });*/
+
+
+    
 
 });
