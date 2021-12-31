@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             "portrait": "MimiKeel.jpg"
         },
         {
-            "name": "Ellie-Rose Wilkens",
+            "name": "Ellie Rose Wilkens",
             "id": 930,
             "city": "Paris",
             "country": "France",
@@ -75,6 +75,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
             console.log(photographer.city);
             console.log(photographer.id);
 
+            const h2 = document.createElement( 'h2' );
+            h2.textContent = `${photographer.name} test`;
+            divPhotographerPage.appendChild(h2);
+           
             const spanCity = document.createElement("span");
             spanCity.innerHTML = photographer.city;
             divPhotographerPage.appendChild(spanCity);
@@ -82,6 +86,57 @@ document.addEventListener("DOMContentLoaded", ()=>{
             const spanCountry = document.createElement("span");
             spanCountry.innerHTML = photographer.country;
             divPhotographerPage.appendChild(spanCountry);
+
+            const spanTagline = document.createElement("span");
+            spanTagline.innerHTML = photographer.tagline;
+            divPhotographerPage.appendChild(spanTagline);
+
+            const imgPortrait = document.createElement("img");
+            const portrait = `assets/photographers/${photographer.portrait}`;
+            imgPortrait.setAttribute("src", portrait);
+            imgPortrait.setAttribute("alt", 'Portrait du photographe');
+            imgPortrait.setAttribute("class", "photographer_portrait");
+            divPhotographerPage.appendChild(imgPortrait);
+
+
+            /*const samplePhoto = document.createElement("img");
+            const portrait = `assets/sample photos/${photographer.portrait}`;
+            imgPortrait.setAttribute("src", portrait);
+            imgPortrait.setAttribute("alt", 'Portrait du photographe');
+            imgPortrait.setAttribute("class", "photographer_portrait");
+            divPhotographerPage.appendChild(imgPortrait);*/
+
+            // Etape 1: Sauvegarder le nom et prénom du photographe
+            const currentName = photographer.name;
+
+            // Etape 2: Créér un tableau des noms de répertoire
+            const folderName = [
+                "Ellie rose",
+                "Marcel",
+                "Mimi",
+                "Nabeel",
+                "Rhode",
+                "Tracy"
+            ];
+
+            console.log(currentName);
+            let floderPath = "";
+            const result = currentName.indexOf(folderName);
+            console.log(result);
+
+            // Etape 3: Parcourir le tableau de répertoire
+            /*folderName.forEach(folder => {
+                // Etape 4: Vérifier que le nom du répertoire correspond à un nom de photographe
+                if (currentName.includes(folder)) {
+                    // Le folder correspond au nom u photographe
+                    floderPath = folder;
+                } else {
+                    console.log("else");
+                }
+            });
+
+            console.log(floderPath);*/
+
         }
 
     );
@@ -93,7 +148,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
 
 
-    /*let photographerId = ["195", "925", "527", "82", "930" , "243"];
+    /*let photographerId = ["195", "925", "527", "82", 
+    
+    "930" , "243"];
     photographerId.forEach(id) => {
         console.log(id);
         if (id === "photographerInfo") {

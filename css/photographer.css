@@ -74,3 +74,8 @@ form input {
     border: none;
     border-radius: 5px;
 }
+
+ #photographer_page h2 {
+    color: #D3573C;
+    font-size: 36px;
+}
