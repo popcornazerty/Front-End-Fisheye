@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             console.log(photographer.id);
 
             const h2 = document.createElement( 'h2' );
-            h2.textContent = `${photographer.name} test`;
+            h2.textContent = `${photographer.name}`;
             divPhotographerPage.appendChild(h2);
            
             const spanCity = document.createElement("span");
@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             imgPortrait.setAttribute("alt", 'Portrait du photographe');
             imgPortrait.setAttribute("class", "photographer_portrait");
             divPhotographerPage.appendChild(imgPortrait);
+
+            const spanblock = document.createElement("class");
 
 
             /*const samplePhoto = document.createElement("img");
@@ -125,7 +127,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             console.log(result);
 
             // Etape 3: Parcourir le tableau de répertoire
-            /*folderName.forEach(folder => {
+            folderName.forEach(folder => {
                 // Etape 4: Vérifier que le nom du répertoire correspond à un nom de photographe
                 if (currentName.includes(folder)) {
                     // Le folder correspond au nom u photographe
@@ -135,7 +137,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 }
             });
 
-            console.log(floderPath);*/
+            console.log(floderPath);
 
         }
 

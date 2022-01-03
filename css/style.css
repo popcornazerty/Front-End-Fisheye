@@ -51,6 +51,7 @@ h1 {
 .photographer_section article h2 {
     color: #D3573C;
     font-size: 36px;
+    
 }
 
 .photographer_section article img {
@@ -83,4 +84,15 @@ h1 {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#photographer_page h2 {
+    margin-left: 40px;
+    display: flex;
+   
+}
+.photograph-header {
+    display: flex;
+    flex-wrap: wrap;
 }
