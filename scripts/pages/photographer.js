@@ -1,6 +1,8 @@
 //Mettre le code JavaScript lié à la page photographer.html
 document.addEventListener("DOMContentLoaded", ()=>{
     const photographerId = new URLSearchParams(window.location.search).get('id');
+
+    console.log(photographerId)
     const photographers =[
         {
             "name": "Mimi Keel",
@@ -64,84 +66,90 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     });
 
+    // Premiere etape on va recuperer les informations du photographe
+
+    const {name, city, country, tagline, portrait} = photographerInfo[0];
+
+
+
     //console.log(photographerInfo);
 
-    const divPhotographerPage = document.getElementById("photographer_page");
-    //console.log(divPhotographerPage);
-    //console.log(photographerInfo.length);
+    // const divPhotographerPage = document.getElementById("photographer_page");
+    // //console.log(divPhotographerPage);
+    // //console.log(photographerInfo.length);
 
-    photographerInfo.forEach(
-        photographer => {
-            console.log(photographer.city);
-            console.log(photographer.id);
+    // photographerInfo.forEach(
+    //     photographer => {
+    //         console.log(photographer.city);
+    //         console.log(photographer.id);
 
-            const h2 = document.createElement( 'h2' );
-            h2.textContent = `${photographer.name}`;
-            divPhotographerPage.appendChild(h2);
+    //         const h2 = document.createElement( 'h2' );
+    //         h2.textContent = `${photographer.name}`;
+    //         divPhotographerPage.appendChild(h2);
            
-            const spanCity = document.createElement("span");
-            spanCity.innerHTML = photographer.city;
-            divPhotographerPage.appendChild(spanCity);
+    //         const spanCity = document.createElement("span");
+    //         spanCity.innerHTML = photographer.city;
+    //         divPhotographerPage.appendChild(spanCity);
 
-            const spanCountry = document.createElement("span");
-            spanCountry.innerHTML = photographer.country;
-            divPhotographerPage.appendChild(spanCountry);
+    //         const spanCountry = document.createElement("span");
+    //         spanCountry.innerHTML = photographer.country;
+    //         divPhotographerPage.appendChild(spanCountry);
 
-            const spanTagline = document.createElement("span");
-            spanTagline.innerHTML = photographer.tagline;
-            divPhotographerPage.appendChild(spanTagline);
+    //         const spanTagline = document.createElement("span");
+    //         spanTagline.innerHTML = photographer.tagline;
+    //         divPhotographerPage.appendChild(spanTagline);
 
-            const imgPortrait = document.createElement("img");
-            const portrait = `assets/photographers/${photographer.portrait}`;
-            imgPortrait.setAttribute("src", portrait);
-            imgPortrait.setAttribute("alt", 'Portrait du photographe');
-            imgPortrait.setAttribute("class", "photographer_portrait");
-            divPhotographerPage.appendChild(imgPortrait);
+    //         const imgPortrait = document.createElement("img");
+    //         const portrait = `assets/photographers/${photographer.portrait}`;
+    //         imgPortrait.setAttribute("src", portrait);
+    //         imgPortrait.setAttribute("alt", 'Portrait du photographe');
+    //         imgPortrait.setAttribute("class", "photographer_portrait");
+    //         divPhotographerPage.appendChild(imgPortrait);
 
-            const spanblock = document.createElement("class");
+    //         const spanblock = document.createElement("class");
 
 
-            /*const samplePhoto = document.createElement("img");
-            const portrait = `assets/sample photos/${photographer.portrait}`;
-            imgPortrait.setAttribute("src", portrait);
-            imgPortrait.setAttribute("alt", 'Portrait du photographe');
-            imgPortrait.setAttribute("class", "photographer_portrait");
-            divPhotographerPage.appendChild(imgPortrait);*/
+    //         /*const samplePhoto = document.createElement("img");
+    //         const portrait = `assets/sample photos/${photographer.portrait}`;
+    //         imgPortrait.setAttribute("src", portrait);
+    //         imgPortrait.setAttribute("alt", 'Portrait du photographe');
+    //         imgPortrait.setAttribute("class", "photographer_portrait");
+    //         divPhotographerPage.appendChild(imgPortrait);*/
 
-            // Etape 1: Sauvegarder le nom et prénom du photographe
-            const currentName = photographer.name;
+    //         // Etape 1: Sauvegarder le nom et prénom du photographe
+    //         const currentName = photographer.name;
 
-            // Etape 2: Créér un tableau des noms de répertoire
-            const folderName = [
-                "Ellie rose",
-                "Marcel",
-                "Mimi",
-                "Nabeel",
-                "Rhode",
-                "Tracy"
-            ];
+    //         // Etape 2: Créér un tableau des noms de répertoire
+    //         const folderName = [
+    //             "Ellie rose",
+    //             "Marcel",
+    //             "Mimi",
+    //             "Nabeel",
+    //             "Rhode",
+    //             "Tracy"
+    //         ];
 
-            console.log(currentName);
-            let floderPath = "";
-            const result = currentName.indexOf(folderName);
-            console.log(result);
+    //         console.log(currentName);
+    //         let floderPath = "";
+    //         const result = currentName.indexOf(folderName);
+    //         console.log(result);
 
-            // Etape 3: Parcourir le tableau de répertoire
-            folderName.forEach(folder => {
-                // Etape 4: Vérifier que le nom du répertoire correspond à un nom de photographe
-                if (currentName.includes(folder)) {
-                    // Le folder correspond au nom u photographe
-                    floderPath = folder;
-                } else {
-                    console.log("else");
-                }
-            });
+    //         // Etape 3: Parcourir le tableau de répertoire
+    //         folderName.forEach(folder => {
+    //             // Etape 4: Vérifier que le nom du répertoire correspond à un nom de photographe
+    //             if (currentName.includes(folder)) {
+    //                 // Le folder correspond au nom u photographe
+    //                 floderPath = folder;
+    //             } else {
+    //                 console.log("else");
+    //             }
+    //         });
 
-            console.log(floderPath);
+    //         console.log(floderPath);
 
-        }
+    //     }
 
-    );
+    // );
 
 
 
