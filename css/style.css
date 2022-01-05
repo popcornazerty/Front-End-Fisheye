@@ -96,3 +96,22 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 }
+
+#filter {
+    width: 50px;
+    height:60px;
+    background-color: #901C1C;
+    margin-left: 80px;
+    padding: 11px;
+    border: none;
+    border-radius: 4px ;
+    cursor: pointer;
+}
+
+.popularity, .date, .title {
+    color: white;
+    font-size: ;
+    font-weight: ;
+    
+
+}

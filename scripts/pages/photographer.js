@@ -69,8 +69,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // Premiere etape on va recuperer les informations du photographe
 
     const {name, city, country, tagline, portrait} = photographerInfo[0];
+    console.log(name);
 
 
+    const divPhotographerPage = document.getElementById("photographer_header");
+    const h2 = document.createElement( 'h2' );
+    h2.textContent = `${photographer.name}`;
+    divPhotographerPage.appendChild(h2);
+  
 
     //console.log(photographerInfo);
 
