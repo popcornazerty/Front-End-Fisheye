@@ -99,25 +99,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.dropdown {
-    
-    width: 92px;
-    height:120px;
-    background-color: #901C1C;
-    margin-left: 80px;
-    padding: 11px;
-    border: none;
-    border-radius: 4px ;
-    cursor: pointer;
-}
 
-.dropdown-menu{
-    color: #901C1C;
-}
-.dropdown-item {
-    color: white;
-
-}
 
 .popularity, .date, .title {
     color: white;

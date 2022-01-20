@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
-  </head>
-  <body>
-    <header>
-      <img src="assets/images/logo.png" class="logo" />
-    </header>
-    <main id="main">
-      
-      <div class="photograph-header">
-        <div class="profile_description">
-        <h1 class="profile-name">Mimi Keel</h1> 
-        <span class="city profile">London,</span>
-        <span class="country profile">UK</span> <br> <br>
-        <span class="mantra profile">Voir le beau dans le quotidien</span>
-       
+   <head>
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="assets/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+      <title>Fisheye - photographe </title>
+   </head>
+   <body>
+      <header>
+         <img src="assets/images/logo.png" class="logo" />
+      </header>
+      <main id="main">
+         <div class="photograph-header">
+            <div class="profile_description">
+               <h1 class="profile-name">Mimi Keel</h1>
+               <span class="city profile">London,</span>
+               <span class="country profile">UK</span> <br> <br>
+               <span class="mantra profile">Voir le beau dans le quotidien</span>
+            </div>
+            <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
+            <img id="profile_picture"
+               src="assets/photographers/MimiKeel.jpg" 
+               alt="profile picture of photographer Mimi Keel">
+         </div>
+         </div>
+      </main>
+      <div id="contact_modal">
+         <div class="modal">
+            <header>
+               <h2>Contactez-moi</h2>
+               <img src="assets/icons/close.svg" onclick="closeModal()" />
+            </header>
+            <form>
+               <div>
+                  <label>Prénom</label>
+                  <input />
+               </div>
+               <button class="contact_button">Envoyer</button>
+            </form>
+         </div>
       </div>
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-        <img id="profile_picture"
-        src="assets/photographers/MimiKeel.jpg" 
-        alt="profile picture of photographer Mimi Keel">
+      <div id= "filter">
+         <span class="popularity">Popularité</span>
+         <span class="date">Date</span>
+         <span class="title">Titre</span>
       </div>
-          
-         
+      <div class="custom-select">
+         <select>
+            <option value="populairté"> Popularité</option>
+            <option value="date"> Date</option>
+            <option value="titre"> Titre</option>
+         </select>
       </div>
-    </main>
-    <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
-        </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
-       
-        
-     
-			</div>
-		</div>
-    <div id= "filter">
-      <span class="popularity">Popularité</span>
-      <span class="date">Date</span>
-      <span class="title">Titre</span>
-    </div>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Popularité</a>
-        <a class="dropdown-item" href="#">Date</a>
-        <a class="dropdown-item" href="#">Titre</a>
+      <div id="flex-area">
+         <a href="#">
+         <img src="assets/images/photos/mimi/animals_rainbow.jpg" alt="Animals Rainbow" />
+         <span>Arc-en-ciel</span>
+         <a href="#">
+         <img src="assets/images/photos/mimi/Travel_Lonesome.jpg" alt="Travel Lonesome" />
+         <span>Solitude</span>
+         <a href="#">
+         <img src="assets/images/photos/mimi/Event_SeasideWedding.jpg" alt="Seas Wedding" />
+         <span>Mariage à la mer</span>
+         <a href="#">
+         <img src="assets/images/photos/mimi/Travel_HillsideColor.jpg" alt="Travel hillside" />
+         <span></span>
+         <a href="#">
+         <img src="assets/images/photos/mimi/Portrait_Nora.jpg" alt="portrait women" />
+         <span></span>
+         <a href="#">
+         <img src="assets/images/photos/mimi/Portrait_Wednesday.jpg" alt="portrait children pulling faces" />
+         <span></span>
       </div>
-    </div>
-    <div id="flex-area">
-      <a href="#">
-        <img src="assets/images/photos/mimi/animals_rainbow.jpg" alt="Animals Rainbow" />
-        <span>Arc-en-ciel</span>
-        <a href="#">
-          <img src="images/.jpg" alt="img1" />
-          <span></span>
-          <a href="#">
-            <img src="images/.jpg" alt="img1" />
-            <span></span>
-            <a href="#">
-              <img src="images/.jpg" alt="img1" />
-              <span></span>
-              <a href="#">
-                <img src="images/.jpg" alt="img1" />
-                <span></span>
-                <a href="#">
-                  <img src="images/.jpg" alt="img1" />
-                  <span></span>
-    </div>
-    </div>
-   <!-- <script src="/scripts/utils/contactForm.js"></script>
-    <script src="scripts/pages/photographer.js"></script>-->
-  </body>
+      </div>
+      <!-- <script src="/scripts/utils/contactForm.js"></script>
+         <script src="scripts/pages/photographer.js"></script>-->
+   </body>
 </html>
