@@ -5,3 +5,8 @@ function openModal(imgName) {
     img.src = "assets/images/photos/mimi/" + imgName;
     divModal.appendChild(img);
 }
+
+function closeModal(imgName) {
+    const divModal = document.getElementById("img_modal");
+    divModal.style.display = "none";
+}

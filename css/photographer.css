@@ -197,3 +197,23 @@ form input {
       display: none;
       background-color: red;
   }
+
+  #message {
+      height:150px;
+  }
+
+  #counter_and_price{
+      display:flex;
+      justify-content:space-between;
+      
+      height:40px;
+      width:200px;
+      background-color: #DB8876;
+      border-radius: 2%;
+  }
+  .counter {
+      margin: 5%;
+  }
+  .price_banner {
+      margin: 5%;
+  }

@@ -2,6 +2,8 @@
 <html>
    <head>
       <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
       <meta charset="utf-8">
       <link rel="icon" type="image/png" href="assets/favicon.png">
       <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
@@ -34,7 +36,13 @@
             <form>
                <div>
                   <label>Prénom</label>
-                  <input />
+                  <input type="text" name="First Name"/>
+                  <label>Nom</label>
+                  <input type="text" name="Last Name"/>
+                  <label>Email</label>
+                  <input type="email" name="Email"/>
+                  <label>Votre message</label>
+                  <input type="text" name="Your Message" id="message"/>
                </div>
                <button class="contact_button">Envoyer</button>
             </form>
@@ -55,24 +63,63 @@
       <div id="flex-area">
         
          <a href="#">
-         <img onclick="openModal('animals_rainbow.jpg')" src="assets/images/photos/mimi/animals_rainbow.jpg" alt="Animals Rainbow" />
-         <span>Arc-en-ciel</span>
-         <a href="#">
-         <img onclick="openModal('Travel_Lonesome.jpg')" src="assets/images/photos/mimi/Travel_Lonesome.jpg" alt="Travel Lonesome" />
+         <img onclick="openModal('Travel_Lonesome.jpg')" src="assets/images/photos/mimi/Travel_Lonesome.jpg" alt="Solitude" />
+         <div class="subtitle_description">
+         
          <span>Solitude</span>
+          <div class="block_heart">
+            <svg class="heart heart_full" viewBox="-20 0 550 550" xml:space="preserve">
+               <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                  c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                  c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                  s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                  C512,93.417,453.532,30,376,30z"></path>
+               <defs>
+                  <linearGradient>
+                     <stop offset="0%" stop-color="#9356DC"></stop>
+                     <stop offset="100%" stop-color="#FF79DA"></stop>
+                  </linearGradient>
+               </defs>
+            </svg>
+            <svg class="heart heart_empty" viewBox="-20 0 550 550" xml:space="preserve">
+               <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                  c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                  c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                  s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                  C512,93.417,453.532,30,376,30z"></path>
+               <defs>
+                  <linearGradient id="heart_color">
+                     <stop offset="0%" stop-color="#9356DC"></stop>
+                     <stop offset="100%" stop-color="#FF79DA"></stop>
+                  </linearGradient>
+               </defs>
+            </svg>
+         </div>
+        </div>
+         <img onclick="openModal('Travel_HillsideColor.jpg')" src="assets/images/photos/mimi/Travel_HillsideColor.jpg" alt="Travel Lonesome" />
+         <span>Hillside</span>
          <a href="#">
-         <img src="assets/images/photos/mimi/Event_SeasideWedding.jpg" alt="Seas Wedding" />
-         <span>Mariage à la mer</span>
+         <img onclick="openModal('Portrait_Nora.jpg')"src="assets/images/photos/mimi/Portrait_Nora.jpg" alt="Portrait Nora" />
+         <span>Portrait Mercredi</span>
          <a href="#">
-         <img src="assets/images/photos/mimi/Travel_HillsideColor.jpg" alt="Travel hillside" />
-         <span>test</span>
+          <img onclick="openModal('Portrait_Background.jpg')" src="assets/images/photos/mimi/Portrait_Background.jpg" alt="Portrait Background" />
+         <span>Raw Black Portrait</span>
          <a href="#">
-         <img src="assets/images/photos/mimi/Portrait_Nora.jpg" alt="portrait women" />
-         <span></span>
+          <img onclick="openModal('Event_SeasideWedding.jpg')"src="assets/images/photos/mimi/Event_SeasideWedding.jpg" alt="Seaside Wedding" />
+         <span>Seaside Wedding</span>
          <a href="#">
-         <img src="assets/images/photos/mimi/Portrait_Wednesday.jpg" alt="portrait children pulling faces" />
-         <span></span> 
-
+          <img onclick="openModal('Event_PintoWedding')" src="assets/images/photos/mimi/Event_PintoWedding.jpg" alt="Event Pinto wedding" />
+         <span>Boulder Wedding</span> 
+         <a href="#">
+          <img onclick="openModal('Event_BenevidesWedding.jpg')" src="assets/images/photos/mimi/Event_BenevidesWedding.jpg" alt="Event benevides wedding" />
+          <span>Benevides Wedding</span> 
+          <a href="#">
+            <img onclick="openModal('Animals_Wild_Horses_in_the_mountains.jpg')" src="assets/images/photos/mimi/Animals_Wild_Horses_in_the_mountains.mp4" alt="Animals wild horse in mountains" />
+            <span>Wild horses in the mountains</span> 
+            <a href="#">
+              <img onclick="openModal('Animals_Rainbow.jpg')" src="assets/images/photos/mimi/Animals_Rainbow.jpg" alt="Rainbow bird" />
+              <span>Rainbow Bird</span> 
+            </a>
 
 
 
@@ -80,13 +127,18 @@
       </div>
 
       <div id="img-modal">
-        TEST000000000
+        Solitude
         <span>000000000000000</span>
       </div>
 
+      <div id="counter_and_price">
+        <span class="counter">297 081   <!-- solid style -->
+          <i class="fa-solid fa-user"></i></span>
+        <span class="price_banner">300€ / jour</span>
+      </div>
 
-       <!--<script src="/scripts/utils/contactForm.js"></script>-->
-      <!--<script src="scripts/pages/photographer.js"></script>-->
+      <script src="/scripts/utils/contactForm.js"></script>
+      <script src="scripts/pages/photographer.js"></script>
       <script src="scripts/utils/modal.js"></script>
    </body>
 </html>
