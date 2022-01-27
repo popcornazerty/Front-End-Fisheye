@@ -78,6 +78,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     divPhotographerPage.appendChild(h2);
   
 
+    //test gallery lightbox
+   
+
     //console.log(photographerInfo);
 
     // const divPhotographerPage = document.getElementById("photographer_page");

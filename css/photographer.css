@@ -120,7 +120,7 @@ form input {
 
 }
 /*Selection ensemble sans l'image*/
-#flex-area a *:not(img) {
+#flex-area a *:not(img,.counter_title_and_heart) {
     margin-left: 5px;
     display: flex;
     line-height: 1.5em;
@@ -205,7 +205,7 @@ form input {
   #counter_and_price{
       display:flex;
       justify-content:space-between;
-      
+      z-index: 1;
       height:40px;
       width:200px;
       background-color: #DB8876;
@@ -216,4 +216,15 @@ form input {
   }
   .price_banner {
       margin: 5%;
+  }
+
+  .title_and_heart {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5% 0 5%;
+
+  }
+
+  .counter_title_and_heart {
+      margin-left: 120px;
   }
