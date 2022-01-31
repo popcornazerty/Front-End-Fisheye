@@ -111,7 +111,7 @@ form input {
     box-shadow: 1px 0px 3px 0px rgba(158, 158, 158, 1);
 }
 /*Taille images cartes*/
-#flex-area a img {
+#flex-area a img,video {
     object-fit: cover;
     width: 100%;
     height: 260px;
@@ -120,7 +120,7 @@ form input {
 
 }
 /*Selection ensemble sans l'image*/
-#flex-area a *:not(img,.counter_title_and_heart) {
+#flex-area a *:not(img,video,.counter_title_and_heart) {
     margin-left: 5px;
     display: flex;
     line-height: 1.5em;
