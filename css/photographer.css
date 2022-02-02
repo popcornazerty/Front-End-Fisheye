@@ -210,6 +210,9 @@ form input {
       width:200px;
       background-color: #DB8876;
       border-radius: 2%;
+      position: fixed;
+      bottom:0;
+      right:0;
   }
   .counter {
       margin: 5%;
