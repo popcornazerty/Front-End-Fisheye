@@ -2,10 +2,12 @@
 <html>
    <head>
       <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="css/photographer.css" rel="stylesheet" type="text/css" />
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+     
       
 <meta charset="utf-8">
       <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -51,18 +53,21 @@
             </form>
          </div>
       </div>
-      <div id= "filter">
-         <span class="popularity">Popularité</span>
-         <span class="date">Date</span>
-         <span class="title">Titre</span>
-      </div>
-      <div class="custom-select">
-         <select>
-            <option value="populairté"> Popularité</option>
-            <option value="date"> Date</option>
-            <option value="titre"> Titre</option>
-         </select>
-      </div>
+    
+       <!-- DROPDOWN -->
+       <div class="dropdown-menu">
+         <span id="sort-text">Trier par</span>
+         <div id="sort-wrapper">
+             <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
+             <span class="fas fa-chevron-down arrow-down-open" role='button'></span>
+             <ul class="hidden-sort" role="listbox">
+                 <li class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
+                 </li>
+                 <li class="sort" role='option'>Date</li>
+                 <li class="sort" role='option'>Tître</li>
+             </ul>
+         </div>
+     </div>
       <div id="flex-area">
         
          <a href="#">
@@ -71,7 +76,7 @@
          
          <span>Solitude</span>
          <span class="counter_title_and_heart">11</span>
-         <i class="fa-solid fa-heart"></i>
+      <img src="assets/icons/heart-solid.svg" id="heart_picture" alt="heart solid">
          </div>
          <a href="#">
          <img onclick="openModal('Travel_HillsideColor.jpg')" src="assets/images/photos/mimi/Travel_HillsideColor.jpg" alt="Travel Lonesome" />
@@ -115,8 +120,8 @@
       </div>
 
       <div id="counter_and_price">
-         <span class="counter">297 081   <!-- solid style -->
-          <i class="fa-solid fa-heart"></i></span>
+         <span class="counter">297 081   <!-- solid style --></span>
+          <img src="assets/icons/heart-solid.svg" id="heart_bottom" alt="heart solid">
          <span class="price_banner">300€ / jour</span>
        </div>
 
