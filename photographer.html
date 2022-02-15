@@ -4,6 +4,7 @@
       <link href="css/style.css" rel="stylesheet" type="text/css" />
       <link href="css/photographer.css" rel="stylesheet" type="text/css" />
       <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+      <link href="css/DropDownMenu.css" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -16,7 +17,9 @@
    </head>
    <body>
       <header>
+         <a href="index.html" title="HomePage">
          <img src="assets/images/logo.png" class="logo" />
+         </a>
       </header>
       <main id="main">
          <div class="photograph-header">
@@ -67,9 +70,9 @@
          <span id="sort-text">Trier par</span>
          <div id="sort-wrapper">
              <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
-             <span class="fas fa-chevron-down arrow-down-open" role='button'></span>
-             <ul class="hidden-sort" role="listbox">
-                 <li class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
+             <span class="fas fa-chevron-down arrow-down-open" id="chevron-open" onclick="displayModal()"role='button'></span>
+             <ul class="hidden-sort" role="listbox" id="open-lightbox" style="display: block;">
+                 <li class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close" id="chevron-close"></span>
                  </li>
                  <li class="sort" role='option'>Date</li>
                  <li class="sort" role='option'>Tître</li>
@@ -139,6 +142,7 @@
       <script src="/scripts/utils/contactForm.js"></script>
       <script src="scripts/pages/photographer.js"></script>
       <script src="scripts/utils/modal.js"></script>
+      <script src="scripts/utils/lightbox.js"></script>
 
 
 

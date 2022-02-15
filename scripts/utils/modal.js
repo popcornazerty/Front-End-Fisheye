@@ -6,10 +6,10 @@ function openModal(imgName) {
     divModal.appendChild(img);
 }
 
-function closeModal(imgName) {
-    const divModal = document.getElementById("img_modal");
-    divModal.style.display = "none";
-}
+//function closeModal(imgName) {
+//    const divModal = document.getElementById("img_modal");
+//    divModal.style.display = "none";
+//}
 
 let video = document.getElementById("video");
 video.addEventListener("click", function(event) { 
