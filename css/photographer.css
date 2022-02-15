@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*
 #contact_modal {
     display: none;
-}
+}*/
 
 .photograph-header {
     background-color: #FAFAFA;
@@ -52,12 +52,15 @@
 
 .modal header img {
     cursor: pointer;
+    position: relative;
+    bottom:30px;
 }
 
 .modal header h2 {
     font-size: 64px;
     font-weight: normal;
     text-align: center;
+    padding-top: 20px;
 }
 
 form {
@@ -72,12 +75,14 @@ form label {
     font-size: 36px;
 }
 
+
 form div {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: self-start;
     margin-bottom: 26px;
+    margin-top: 70px;
 }
 
 form input {
@@ -92,6 +97,10 @@ form input {
     font-size: 36px;
 }
 
+#form_name {
+   position:relative;
+   right:80px; 
+}
 #flex-area {
     display: flex;
     flex-wrap: wrap;
@@ -207,3 +216,8 @@ form input {
   .counter_title_and_heart {
       margin-left: 120px;
   }
+
+  /* FORM */
+  form #form-title {
+    display: block;
+}

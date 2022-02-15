@@ -26,16 +26,20 @@
                <span class="country profile">UK</span> <br> <br>
                <span class="mantra profile">Voir le beau dans le quotidien</span>
             </div>
-            <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
+             <button class="contact_button" onclick="displayModal()">Contactez-moi</button> 
             <img id="profile_picture"
                src="assets/photographers/MimiKeel.jpg" 
                alt="profile picture of photographer Mimi Keel">
          </div>
       </main>
+      
       <div id="contact_modal">
          <div class="modal">
             <header>
-               <h2>Contactez-moi</h2>
+               <h2 id="form_title">
+               <span>Contactez-moi</span> <br>
+               <span id="form_name">Mimi Keel</span>
+            </h2>
                <img src="assets/icons/close.svg" onclick="closeModal()" />
             </header>
             <form>
@@ -53,7 +57,11 @@
             </form>
          </div>
       </div>
-    
+   
+
+
+
+
        <!-- DROPDOWN -->
        <div class="dropdown-menu">
          <span id="sort-text">Trier par</span>

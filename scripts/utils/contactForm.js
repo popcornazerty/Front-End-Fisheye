@@ -5,4 +5,7 @@ function displayModal() {
 
 function closeModal() {
     const modal = document.getElementById("contact_modal");
-    modal.style.display = "none"
+    modal.style.display = "none";
+
+
+ 
