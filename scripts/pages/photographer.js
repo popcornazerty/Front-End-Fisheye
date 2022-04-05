@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     const divPhotographerPage = document.getElementById("photographer_header");
     const h2 = document.createElement( 'h2' );
-    h2.textContent = `${photographer.name}`;
+    h2.textContent = `${photographers.name}`;
     divPhotographerPage.appendChild(h2);
   
 

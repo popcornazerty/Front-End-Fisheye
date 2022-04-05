@@ -23,6 +23,7 @@
         font-weight: 500;
         padding: 1.25rem;
         display:none;
+        border-radius: 5px;
     }
 
     .sort-btn {
