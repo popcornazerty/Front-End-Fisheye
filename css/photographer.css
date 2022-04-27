@@ -102,11 +102,16 @@ form input {
    position:relative;
    right:80px; 
 }
-#flex-area {
+
+#order_by {
+    position: relative;
+    top:35px;
+    left: 40px;
+}
+ #flex-area {
     display:flex;
     flex-wrap:wrap;
-    padding:15px;
-    background:#eeeeee;
+    padding:40px;
     gap:15px;
 }
 #flex-area a {
