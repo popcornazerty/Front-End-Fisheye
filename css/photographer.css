@@ -140,8 +140,8 @@ form input {
 
 #flex-area a *:not(img,video,.counter_title_and_heart) {
     margin-left: 5px;
-    display: flex;
     line-height: 1.5em;
+    position: relative;
 }
 
 #profile_picture {
@@ -166,9 +166,8 @@ form input {
 /* coeur like*/
 .likes-area{
   
-    position:absolute;
-    top:15px;
-    right:0;
+    position: absolute;
+    left: 65px;
    
  }
  .likes-area svg{
